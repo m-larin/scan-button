@@ -1,0 +1,10 @@
+[Unit]
+Description=Scan button service
+After=syslog.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/scan-button /var/scan
+
+[Install]
+WantedBy=multi-user.target
